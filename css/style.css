@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --primary-color: #b7b7a4;
+  --bg-color: #39392d;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+
+.menu__navegacion {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 5rem;
+}
+
+.menu__navegacion li {
+  margin-left: 1rem;
+  list-style: none;
+}
+
+.menu__navegacion li a {
+  color: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--primary-color);
+  border-radius: 1px;
+}
+
+.menu__navegacion li a:hover {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.menu__logo {
+  margin-left: 4rem;
+  padding: 0.5rem;
+  color: black;
+  background-color: #a5a58d;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10rem 10rem 0 10rem;
+}
+
+.presentacion__titulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.presentacion__texto {
+  margin-top: 5rem;
+  width: 30%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.card {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 10rem 0 0;
+  max-width: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card-contenido {
+  padding: 1.5rem;
+  background: linear-gradient(var(--bg-color), rgba(0, 0, 0, 0.5));
+}
+
+.card__titulo {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.card__texto {
+  color: var(--primary-color);
+}
+
+@media (hover) {
+  .card-contenido {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-contenido {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+}
+
+#cabrera {
+  background-image: url(../img/Cabrera.jpg);
+}
+
+#alos {
+  background-image: url(../img/alos.jpg);
+}
+
+#platitos {
+  background-image: url(../img/platitos.jpg);
+}
+
+#mudra {
+  background-image: url(../img/mudra.jpg);
+}
+
+#temple {
+  background-image: url(../img/temple.jpg);
+}
+
+#rabieta {
+  background-image: url(../img/rabieta.jpg);
+}
+
+#hole {
+  background-image: url(../img/hole.jpg);
+}
+
+#uptown {
+  background-image: url(../img/uptown.jpg);
+}
+
+#bosques {
+  background-image: url(../img/bosques.jpg);
+}
+
+#madero {
+  background-image: url(../img/madero.jpg);
+}
+
+#frutos {
+  background-image: url(../img/frutos.jpg);
+}
+
+#boca {
+  background-image: url(../img/boca.jpg);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "restaurant1"
+    "restaurant2"
+    "restaurant3"
+    "restaurant4";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#primer-item {
+  grid-area: restaurant1;
+}
+
+#segundo-item {
+  grid-area: restaurant2;
+}
+
+#tercer-item {
+  grid-area: restaurant3;
+}
+
+#cuarto-item {
+  grid-area: restaurant4;
+}

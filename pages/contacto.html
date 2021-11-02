@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="menu__logo">
+          <p>¿Que Hago?</p>
+        </div>
+        <nav>
+          <ul class="menu__navegacion">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="restaurantes.html">Restaurantes</a></li>
+            <li><a href="bares.html">Bares</a></li>
+            <li><a href="aire_libre.html">Aire Libre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <form action="">
+      <fieldset>
+        <legend>Formulario de sugerencias y contacto</legend>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" , name="nombre" placeholder="nombre" />
+        </div>
+        <br />
+        <div>
+          <label for="nombre">Apellido:</label>
+          <input type="text" , name="apellido" placeholder="apellido" />
+        </div>
+        <br />
+        <div>
+          <label for="sexo">Hombre</label>
+          <input type="radio" name="sexo" value="hombre">
+          <label for="sexo">Mujer</label>
+          <input type="radio" name="sexo" value="mujer">
+        </div>
+        <br />
+        <div>
+          <label for="categoria">Bar</label>
+          <input type="checkbox" , name="categoria"/>
+          <br />
+          <label for="categoria">Restaurant</label>
+          <input type="checkbox" , name="categoria"/>
+          <br />
+          <label for="categoria">Aire Libre</label>
+          <input type="checkbox" , name="categoria"/>
+        </div>
+        <br />
+        <div>
+        <div>Seleccione una opcion:</div>
+          <select>
+            <option>Consulta</option>
+            <option>Sugerencia</option>
+          </select>  
+        </div> 
+        <br />     
+        <div>
+        <textarea
+          name="sugerencia"
+          rows="10"
+          cols="40"
+          placeholder="Escribe aquí el Restaurant / Bar / Lugar que desearias que agreguemos a la pagina"
+        ></textarea>
+        <br />
+        <button type="reset">Limpiar formulario</button>
+        <button type="submit">Enviar formulario</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>copyright©</footer>
+  </body>
+</html>
