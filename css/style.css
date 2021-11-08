@@ -182,9 +182,11 @@ body {
     "restaurant2"
     "restaurant3"
     "restaurant4";
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #primer-item {
