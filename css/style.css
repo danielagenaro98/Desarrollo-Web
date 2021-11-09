@@ -7,6 +7,12 @@ body {
   background-position: center center;
 }
 
+.navbar-toggler {
+  background: var(--bg-color);
+  margin-right: 4rem;
+  margin-top: 2rem;
+}
+
 .menu__navegacion {
   margin-top: 2rem;
   margin-right: 5rem;
