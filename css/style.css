@@ -167,6 +167,25 @@ body {
   background-image: url(../img/boca.jpg);
 }
 
+form {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.form__titulo h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.form__contacto-label {
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
   .presentacion__titulo h2 {
     margin-bottom: 2rem;
@@ -180,6 +199,9 @@ body {
   .carousel-inner {
     width: 100%;
     margin: 0 auto;
+  }
+  .menu__logo {
+    display: none;
   }
 }
 
