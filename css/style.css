@@ -1,5 +1,5 @@
 body {
-  --primary-color: #b7b7a4;
+  --primary-color: #fafafa;
   --bg-color: #39392d;
   background-image: url(../img/background.jpg);
   background-size: cover;
@@ -53,11 +53,12 @@ body {
   font-weight: 300;
 }
 
+.nav-item {
+  background-color: var(--bg-color);
+}
+
 .presentacion {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 10rem 10rem 0 10rem;
+  padding: 10rem 5rem;
 }
 
 .presentacion__titulo {
@@ -68,7 +69,6 @@ body {
 }
 
 .presentacion__texto {
-  margin-top: 5rem;
   width: 30%;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -81,12 +81,11 @@ body {
   background-size: cover;
   color: white;
   padding: 10rem 0 0;
-  max-width: 300px;
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 500ms ease;
   font-family: "Roboto", sans-serif;
-  margin: auto;
+  margin: 2rem;
 }
 
 .card:hover,
@@ -168,32 +167,29 @@ body {
   background-image: url(../img/boca.jpg);
 }
 
-.grid {
-  display: grid;
-  grid-template-areas:
-    "restaurant1"
-    "restaurant2"
-    "restaurant3"
-    "restaurant4";
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  width: 80%;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .presentacion__titulo h2 {
+    margin-bottom: 2rem;
+  }
 }
 
-#primer-item {
-  grid-area: restaurant1;
+@media (max-width: 576px) {
+  .presentacion {
+    padding: 1rem;
+  }
 }
 
-#segundo-item {
-  grid-area: restaurant2;
+.carousel-inner {
+  width: 70%;
+  margin: 7rem auto;
 }
 
-#tercer-item {
-  grid-area: restaurant3;
+.carousel-item {
+  height: 600px;
 }
 
-#cuarto-item {
-  grid-area: restaurant4;
+.carousel-item img {
+  max-height: 600px;
+  width: 100%;
+  margin: auto;
 }
