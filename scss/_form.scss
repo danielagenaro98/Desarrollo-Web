@@ -1,0 +1,18 @@
+form {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  .form__titulo h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+  }
+}
+
+.form__contacto-label {
+  margin-top: 1rem;
+}

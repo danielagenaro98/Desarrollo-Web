@@ -1,3 +1,155 @@
+.card {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 10rem 0 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+}
+.card .card__titulo {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.card .card-contenido {
+  padding: 1.5rem;
+  background: linear-gradient(var(--bg-color), rgba(0, 0, 0, 0.5));
+}
+.card .card__texto {
+  color: var(--primary-color);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+@media (hover) {
+  .card-contenido {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .card:hover .card-contenido {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+}
+#cabrera {
+  background-image: url(../img/Cabrera.jpg);
+}
+
+#alos {
+  background-image: url(../img/alos.jpg);
+}
+
+#platitos {
+  background-image: url(../img/platitos.jpg);
+}
+
+#mudra {
+  background-image: url(../img/mudra.jpg);
+}
+
+#temple {
+  background-image: url(../img/temple.jpg);
+}
+
+#rabieta {
+  background-image: url(../img/rabieta.jpg);
+}
+
+#hole {
+  background-image: url(../img/hole.jpg);
+}
+
+#uptown {
+  background-image: url(../img/uptown.jpg);
+}
+
+#bosques {
+  background-image: url(../img/bosques.jpg);
+}
+
+#madero {
+  background-image: url(../img/madero.jpg);
+}
+
+#frutos {
+  background-image: url(../img/frutos.jpg);
+}
+
+#boca {
+  background-image: url(../img/boca.jpg);
+}
+
+form {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+form .form__titulo h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.form__contacto-label {
+  margin-top: 1rem;
+}
+
+.presentacion {
+  padding: 10rem 5rem 7rem 5rem;
+}
+.presentacion .presentacion__titulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+.presentacion .presentacion__texto {
+  width: 30%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .presentacion__titulo h2 {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .presentacion {
+    padding: 1rem;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu__logo {
+    display: none;
+  }
+}
+.carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel-inner .carousel-item img {
+  max-height: 60rem;
+  width: 100%;
+  margin: auto;
+}
+
 body {
   --primary-color: #fafafa;
   --bg-color: #39392d;
@@ -57,161 +209,4 @@ body {
   background-color: var(--bg-color);
 }
 
-.presentacion {
-  padding: 10rem 5rem 7rem 5rem;
-}
-
-.presentacion__titulo {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.1rem;
-  color: var(--primary-color);
-}
-
-.presentacion__texto {
-  width: 30%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  color: var(--primary-color);
-}
-
-.card {
-  background-position: center;
-  background-size: cover;
-  color: white;
-  padding: 10rem 0 0;
-  border-radius: 1rem;
-  overflow: hidden;
-  transition: transform 500ms ease;
-  font-family: "Roboto", sans-serif;
-  margin: 2rem;
-}
-
-.card:hover,
-.card:focus-within {
-  transform: scale(1.05);
-}
-
-.card-contenido {
-  padding: 1.5rem;
-  background: linear-gradient(var(--bg-color), rgba(0, 0, 0, 0.5));
-}
-
-.card__titulo {
-  text-decoration: underline;
-  text-decoration-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-.card__texto {
-  color: var(--primary-color);
-}
-
-@media (hover) {
-  .card-contenido {
-    transform: translateY(65%);
-    transition: transform 500ms ease;
-  }
-  .card:hover .card-contenido {
-    transform: translateY(0);
-    transition-delay: 500ms;
-  }
-}
-
-#cabrera {
-  background-image: url(../img/Cabrera.jpg);
-}
-
-#alos {
-  background-image: url(../img/alos.jpg);
-}
-
-#platitos {
-  background-image: url(../img/platitos.jpg);
-}
-
-#mudra {
-  background-image: url(../img/mudra.jpg);
-}
-
-#temple {
-  background-image: url(../img/temple.jpg);
-}
-
-#rabieta {
-  background-image: url(../img/rabieta.jpg);
-}
-
-#hole {
-  background-image: url(../img/hole.jpg);
-}
-
-#uptown {
-  background-image: url(../img/uptown.jpg);
-}
-
-#bosques {
-  background-image: url(../img/bosques.jpg);
-}
-
-#madero {
-  background-image: url(../img/madero.jpg);
-}
-
-#frutos {
-  background-image: url(../img/frutos.jpg);
-}
-
-#boca {
-  background-image: url(../img/boca.jpg);
-}
-
-form {
-  background-color: var(--bg-color);
-  color: var(--primary-color);
-  margin: 2rem;
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
-.form__titulo h2 {
-  color: var(--primary-color);
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-}
-
-.form__contacto-label {
-  margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
-  .presentacion__titulo h2 {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .presentacion {
-    padding: 1rem;
-  }
-  .carousel-inner {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .menu__logo {
-    display: none;
-  }
-}
-
-.carousel-inner {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.carousel-item img {
-  max-height: 60rem;
-  width: 100%;
-  margin: auto;
-}
+/*# sourceMappingURL=style.css.map */

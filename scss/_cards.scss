@@ -1,0 +1,91 @@
+.card {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 10rem 0 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+
+  .card__titulo {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+
+  .card-contenido {
+    padding: 1.5rem;
+    background: linear-gradient(var(--bg-color), rgba(0, 0, 0, 0.5));
+  }
+
+  .card__texto {
+    color: var(--primary-color);
+  }
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+@media (hover) {
+  .card-contenido {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .card:hover .card-contenido {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+}
+
+#cabrera {
+  background-image: url(../img/Cabrera.jpg);
+}
+
+#alos {
+  background-image: url(../img/alos.jpg);
+}
+
+#platitos {
+  background-image: url(../img/platitos.jpg);
+}
+
+#mudra {
+  background-image: url(../img/mudra.jpg);
+}
+
+#temple {
+  background-image: url(../img/temple.jpg);
+}
+
+#rabieta {
+  background-image: url(../img/rabieta.jpg);
+}
+
+#hole {
+  background-image: url(../img/hole.jpg);
+}
+
+#uptown {
+  background-image: url(../img/uptown.jpg);
+}
+
+#bosques {
+  background-image: url(../img/bosques.jpg);
+}
+
+#madero {
+  background-image: url(../img/madero.jpg);
+}
+
+#frutos {
+  background-image: url(../img/frutos.jpg);
+}
+
+#boca {
+  background-image: url(../img/boca.jpg);
+}
