@@ -58,7 +58,7 @@ body {
 }
 
 .presentacion {
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 7rem 5rem;
 }
 
 .presentacion__titulo {
@@ -177,19 +177,19 @@ body {
   .presentacion {
     padding: 1rem;
   }
+  .carousel-inner {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .carousel-inner {
-  width: 70%;
-  margin: 7rem auto;
-}
-
-.carousel-item {
-  height: 600px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .carousel-item img {
-  max-height: 600px;
+  max-height: 60rem;
   width: 100%;
   margin: auto;
 }
