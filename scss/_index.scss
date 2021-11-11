@@ -2,16 +2,14 @@
   padding: 10rem 5rem 7rem 5rem;
 
   .presentacion__titulo {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    @include fonts;
     font-size: 1.1rem;
     color: var(--primary-color);
   }
 
   .presentacion__texto {
     width: 30%;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    @include fonts;
     font-size: 1rem;
     color: var(--primary-color);
   }

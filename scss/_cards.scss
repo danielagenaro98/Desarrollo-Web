@@ -1,4 +1,5 @@
 .card {
+  @include fonts;
   background-position: center;
   background-size: cover;
   color: white;
@@ -6,7 +7,6 @@
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 500ms ease;
-  font-family: "Roboto", sans-serif;
   margin: 2rem;
 
   .card__titulo {

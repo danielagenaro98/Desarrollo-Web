@@ -1,4 +1,6 @@
 .card {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   background-position: center;
   background-size: cover;
   color: white;
@@ -6,7 +8,6 @@
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 500ms ease;
-  font-family: "Roboto", sans-serif;
   margin: 2rem;
 }
 .card .card__titulo {
@@ -94,9 +95,10 @@ form {
   border-radius: 1rem;
 }
 form .form__titulo h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: var(--primary-color);
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-size: 2rem;
 }
 

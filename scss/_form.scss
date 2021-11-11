@@ -6,9 +6,9 @@ form {
   border-radius: 1rem;
 
   .form__titulo h2 {
+    @include fonts;
     color: var(--primary-color);
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-size: 2rem;
   }
 }
