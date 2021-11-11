@@ -1,3 +1,8 @@
+@mixin fonts {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 body {
   --primary-color: #fafafa;
   --bg-color: #39392d;
@@ -24,10 +29,9 @@ body {
 }
 
 .menu__navegacion li a {
+  @include fonts;
   color: var(--primary-color);
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-weight: 300;
   padding: 0.5rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -42,15 +46,14 @@ body {
 }
 
 .menu__logo {
+  @include fonts;
   margin-left: 4rem;
   margin-top: 2rem;
   padding: 0.5rem;
   color: black;
   background-color: #a5a58d;
   border-radius: 10px;
-  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
 }
 
 .nav-item {
